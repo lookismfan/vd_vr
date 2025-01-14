@@ -13,7 +13,7 @@ public bool checkNext(){
     string nextTag = objectsTags[nextObject];
      Rigidbody nextObj = GameObject.FindWithTag(nextTag).GetComponent<Rigidbody>();
     float distance = Vector3.Distance(transform.position, nextObj.transform.position); 
-    if(distance < 2f){
+    if(distance < 5f){
         Debug.Log("Found object!"); 
         nextObject++;
         return true;
